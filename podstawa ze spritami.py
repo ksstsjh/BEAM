@@ -54,10 +54,14 @@ class Gracz(pygame.sprite.Sprite):
         self.rect.x += self.speedx
         self.rect.y += self.speedy
     #zeby nasz sprite nie uciekal poza ekran
-        if self.rect.right > 480:
-            self.rect.right = 480
-        if self.rect.left < 0:
-            self.rect.left = 0
+        if self.rect.right > 620:
+            self.rect.right = 620
+        if self.rect.left < 15:
+            self.rect.left = 15
+        if self.rect.bottom > 445:
+            self.rect.bottom = 445
+        if self.rect.top < 25:
+            self.rect.top = 25
         
 
         
