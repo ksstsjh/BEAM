@@ -1,3 +1,8 @@
+#blagam, niech ktos na to zerknie, bo jak wchodzi sie w drzwi to mi sie crashuje python calkowicie
+#probowalam polaczyc wszystko ze soba i zrobilam mini title screen, ale zmiana loopa mi nie wychodzi totalnie
+#jak sie osobno odpali wszystko to smiga cudnie, tak samo jak sie odpali tylko title screen i space invaders lub title screen i pierwszy stage z chodzeniem po zamku
+#ale przejscie z zamku na space invaders przy kolizji sie wykrzacza totalnie i nie wiem jak mam to naprawić
+
 import random
 import pygame, sys, math
 import os, time
@@ -368,8 +373,8 @@ def main():
        
         door = pygame.draw.rect(screen, (255, 200, 255), (door_X, door_Y, door_width, door_height)) # narysowanie drzwi
 
-# kolizja!!! teraz po zderzeniu z różowymi drzwiami gracz zmienia kolor na zielony, ale w domyśle w tym momencie kończy się obecny loop i zaczyna space invaders
 
+#tu sie dzieja zle rzeczy - zostawilam na ostatnim podejsciu do tego, bo juz nawet nie pamietam jak pierwotnie to wygladalo 
         if player.rect.colliderect(door) == True:
             run2 = True
             while run2:
