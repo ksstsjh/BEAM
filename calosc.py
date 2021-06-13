@@ -270,7 +270,7 @@ class villain1(pygame.sprite.Sprite):
     
     def __init__(self,x,y):
         pygame.sprite.Sprite.__init__(self)
-        self.image=pygame.image.load('enemy1.png')
+        self.image=pygame.image.load('zombie1.1.png')
         self.rect=self.image.get_rect()
         self.rect.centerx = 80
         self.rect.bottom = 420
@@ -294,7 +294,7 @@ class villain2(pygame.sprite.Sprite):
     
     def __init__(self,x,y):
         pygame.sprite.Sprite.__init__(self)
-        self.image=pygame.image.load('enemy1.png')
+        self.image=pygame.image.load('zombie1.1.png')
         self.rect=self.image.get_rect()
         self.rect.centerx = 80
         self.rect.bottom = 220
@@ -317,7 +317,7 @@ class villain3(pygame.sprite.Sprite):
     
     def __init__(self,x,y):
         pygame.sprite.Sprite.__init__(self)
-        self.image=pygame.image.load('enemy1.png')
+        self.image=pygame.image.load('zombie1.1.png')
         self.rect=self.image.get_rect()
         self.rect.centerx = 80
         self.rect.bottom = 100
